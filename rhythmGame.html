@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="rg.css" />
+    <script src="rg.js"></script>
+    <title></title>
+  </head>
+  <body onkeypress="earnPoints()" onload="main()">
+    <!-- The Modal -->
+    <!-- Code for modal is modified from https://www.w3schools.com/howto/howto_css_modals.asp-->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="results">
+          <p>Results!</p>
+          <div id="score"></div>
+          <p id="accuracy"></p>
+          <div
+            onclick="goToGamePage('index.html')"
+            onmouseover="buttonchange('home')"
+            onmouseout="buttonrevert('home')"
+          >
+            <img id="homebutton" src="backtohome.png" alt="home button" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myContainer"></div>
+    <div id="background"></div>
+    <div id="dot"></div>
+    <div id="displayScore"></div>
+  </body>
+  <audio id="audio" controls style="display: none">
+    <source src="beep.m4a" type="audio/mpeg" />
+  </audio>
+</html>

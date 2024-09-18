@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rhythm Game</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="rg.css" />
+    <script src="rg.js"></script>
+  </head>
+  <body id="start">
+    <div>
+      <img id="logo" src="logo.png" alt="candy beat logo" />
+    </div>
+    <div>
+      <div
+        onclick="generateArray('easy')"
+        onmouseover="buttonchange('easy')"
+        onmouseout="buttonrevert('easy')"
+      >
+        <img id="easybutton" src="easy.png" alt="easy button" />
+      </div>
+      <div
+        onclick="generateArray('medium')"
+        onmouseover="buttonchange('medium')"
+        onmouseout="buttonrevert('medium')"
+      >
+        <img id="mediumbutton" src="medium.png" alt="medium button" />
+      </div>
+      <div
+        onclick="generateArray('hard')"
+        onmouseover="buttonchange('hard')"
+        onmouseout="buttonrevert('hard')"
+      >
+        <img id="hardbutton" src="hard.png" alt="hard button" />
+      </div>
+      <div id="array"></div>
+    </div>
+  </body>
+</html>
